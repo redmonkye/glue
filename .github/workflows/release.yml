@@ -1,0 +1,27 @@
+name: Github Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    
+    
+jobs:
+  build:
+    name: Release
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '#docs') }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Pesde
+        uses: lumin-org/setup-pesde@v0.4.1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        with:
+          cache: true
+
+      - name: Publish to Pesde
+        run: pesde publish -y

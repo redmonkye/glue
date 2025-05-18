@@ -1,0 +1,20 @@
+name = "redmonkye/glue"
+version = "0.1.0"
+license = "MIT"
+authors = ["afrxo"]
+description = "Another game framework."
+repository = "https://github.com/redmonkye/glue"
+includes = [
+    "LICENSE",
+    "README.md",
+    "pesde.toml",
+    "src/init.luau",
+]
+
+
+[target]
+environment = "luau"
+lib = "src/init.luau"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
