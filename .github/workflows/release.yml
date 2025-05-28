@@ -1,4 +1,4 @@
-name: Github Release
+name: Pesde Release
 
 on:
   workflow_dispatch:
@@ -23,11 +23,14 @@ jobs:
           token: ${{ secrets.PESDE_TOKEN }}
 
       - name: Publish to Pesde Luau Target
-        run: pesde publish -y
+        run: |
+          pesde intsall
+          pesde publish -y
 
       # https://git.devmarked.win/marked/jecs-pesde/src/branch/main/.forgejo/workflows/syncandrelease.yml
       - name: Publish Roblox Target
         run: |
           mv pesde.toml pesde-luau.toml
           mv pesde-rbx.toml pesde.toml
+          pesde install
           pesde publish -y
