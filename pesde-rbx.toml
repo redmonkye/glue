@@ -1,5 +1,5 @@
 name = "redmonkye/glue"
-version = "0.1.0-rc.3"
+version = "0.1.0-rc.4"
 license = "MIT"
 authors = ["afrxo"]
 description = "A composition framework."
@@ -14,7 +14,7 @@ includes = [
 [target]
 environment = "roblox"
 lib = "src/init.luau"
-build_files = ["src/init.luau"]
+build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
