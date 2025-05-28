@@ -21,7 +21,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         with:
-          version: ^0.6.0
           cache: true
 
       - name: Publish to Pesde
