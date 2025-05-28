@@ -1,7 +1,27 @@
-[![Deploy Docs](https://github.com/afrxo/glue/actions/workflows/docs.yml/badge.svg)](https://github.com/afrxo/glue/actions/workflows/docs.yml)
+<div align="center">
+    <div align="center">
+        <img src="docs/public/logo.png" alt="Logo" height="300" width="300"/>
+    </div>
+<br> 
+</div>
 
-Glue is an opinionated game framework for Roblox that assists you in writing cleaner netcode and streamlines interaction between fundamental mechanics of your game. The motive behind Glue is to give the developer as much flexiblity and configuration as possible, leaving the way the developer writes their code up to them and sets up the nifty parts.
+[![GitHub License](https://img.shields.io/github/license/redmonkye/glue?style=for-the-badge)](LICENSE.md) <br>
 
-Read the full documentation [here](https://afrxo.github.io/glue), find an example project [over here](https://github.com/afrxo/Glue-Boilerplate).
+A lightweight composition framework for Luau
+- Type-safe [Luau](https://luau-lang.org/) API
+- Zero dependencies
+- Minimal boilerplate
 
-###### Powered by [Promise](https://eryn.io/roblox-lua-promise/), [Luau](https://luau-lang.org/)
+### ⚙️ Units
+- Full lifecycle control
+- Static & dynamic provisioning
+- Anonymous (UUID-based)
+
+### 🧩 Architecture
+- Declarative & composable
+- Global & contextual hooks
+- Hook-based extensibility
+
+Read the full documentation [here](https://redmonkye.github.io/glue).
+
+<!-- ###### Powered by [Luau](https://luau-lang.org/) -->

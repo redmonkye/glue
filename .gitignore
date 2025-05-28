@@ -1,7 +1,14 @@
+# pesde
 .pesde
 luau_packages
 lune_packages
-
 pesde.lock
-.DS_Store
 
+/docs/node_modules
+
+#docs
+/docs/.vitepress/cache
+/docs/.vitepress/dist
+
+# lune
+.lune
