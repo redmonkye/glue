@@ -1,0 +1,10 @@
+.home > .VPContent {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.VPHome {
+	margin-top: auto !important;
+	margin-bottom: auto !important; 
+}
