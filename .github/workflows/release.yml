@@ -24,7 +24,7 @@ jobs:
 
       - name: Publish to Pesde Luau Target
         run: |
-          pesde intsall
+          pesde install
           pesde publish -y
 
       # https://git.devmarked.win/marked/jecs-pesde/src/branch/main/.forgejo/workflows/syncandrelease.yml
