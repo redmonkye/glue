@@ -12,9 +12,8 @@ includes = [
 ]
 
 [target]
-environment = "luau"
+environment = "roblox"
 lib = "src/init.luau"
-build_files = ["src/init.luau"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
