@@ -18,10 +18,9 @@ jobs:
 
       - name: Install Pesde
         uses: lumin-org/setup-pesde@v0.4.1
-        env:
-          GH_TOKEN: ${{ github.token }}
         with:
           cache: true
+          token: ${{ secrets.PESDE_TOKEN }}
 
       - name: Publish to Pesde
         run: pesde publish -y
